@@ -1,0 +1,349 @@
+
+/* container */
+.container {
+  padding: 5% 5%;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+  margin: 18px;
+  position: relative;
+  height: auto;
+  background-color: #ffffff;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  right: auto;
+  top: -8px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: 0px;
+  bottom: auto;
+  border: 22px solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  right: auto;
+  top: 30px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: 38px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #ffffff #ffffff #ffffff transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -8px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border: 32px solid;
+  border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  right: auto;
+  top: auto;
+  bottom: -20px;
+  border: 22px solid;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  right: auto;
+  top: auto;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 30px;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 38px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: #ffffff #ffffff transparent transparent;
+}
+/*
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -8px;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 0px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: #ffffff #ffffff transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -40px;
+  top: 30px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: 38px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -40px;
+  top: -8px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: 0px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.gray-background{
+  background-color: #e4e4e4;
+}
+
+.logo{
+  width: auto !important;
+  height: auto !important;
+  max-width: 136px !important;
+}
+
+.settings{
+  margin:  0 0 0 0 !important;
+}
+
+.chat-header {
+  position: absolute;
+  left: 3em;
+  top: 0.4em;
+}
+
+.chat-icon {
+}
+
+.chat-preview {
+  position: absolute;
+  top: 2.8em;
+  left: 4.4em;
+  font-size: 0.8em;
+}
+
+.chat-time {
+  position: absolute;
+  right: 1.5em;
+  top: 1.8em;
+  font-size: 0.6em;
+}
+
+.sender-icon{
+  margin-left: -40px;
+  margin-top: 10px;
+}
+
+.received-message{
+  padding-left: 56px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.sent-message{
+  text-align: right;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.text-status {
+  font-size: smaller;
+  padding-right: 42%;
+}
+
+.status-padding-removed {
+  padding-bottom: 0.2em;
+}
+
+.status-padding-added {
+  padding-bottom: 15px;
+}
+
+.received-message-status {
+  padding-left: 16px;
+  font-size: 0.7em;
+}
+
+.received-message-margin-reduced {
+  top: -20px;
+  left: 20px;
+  display: table-cell;
+}
+
+.conversation-header {
+  align-items: flex-start !important;
+  padding-left: 45px !important;
+
+}
+
+.status {
+  all:unset;
+}
+
+.sent-message-status {
+  padding-right: 85px;
+  font-size: 0.7em;
+  margin-bottom: 0px;
+  color: #6f6f6f;
+  margin-top: -7px;
+}

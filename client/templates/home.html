@@ -1,0 +1,30 @@
+---
+name: home
+url: /home
+controller: LoginController
+---
+<div class="grid-frame vertical">
+  <div class="grid-content shrink" style="padding: 0;">
+    <ul class="primary condense menu-bar">
+      <li><a><strong>Disa.Web</strong></a></li>
+    </ul>
+  </div>
+  <div class="grid-content">
+    <div class="grid-block"><br></div>
+    <div class="grid-block text-center">
+      <div class="grid-content"></div>
+      <div class="grid-content">
+        <div class="card">
+          <div class="card-divider">
+            <h3>Welcome to Disa Web!</h3>
+          </div>
+          <div class="card-section">
+            <p>Welcome to Disa Web. Please Scan the QR code below from Disa on your phone to connect <a ui-sref="chat">next</a></p>
+            <qrcode data="{{peerId}}" size="200"></qrcode>
+          </div>
+        </div>
+      </div>
+      <div class="grid-frame"></div>
+    </div>
+  </div>
+</div>
