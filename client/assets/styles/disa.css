@@ -308,7 +308,6 @@
 
 .text-status {
   font-size: smaller;
-  padding-right: 42%;
 }
 
 .status-padding-removed {
@@ -341,7 +340,7 @@
 }
 
 .sent-message-status {
-  padding-right: 85px;
+  padding-right: 25px;
   font-size: 0.7em;
   margin-bottom: 0px;
   color: #6f6f6f;
