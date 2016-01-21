@@ -35,6 +35,7 @@ var paths = {
     'bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js',
     'bower_components/tether/tether.js',
     'bower_components/hammerjs/hammer.js',
+    'bower_components/jquery/dist/jquery.js',
     'bower_components/angular/angular.js',
     'bower_components/angular-animate/angular-animate.js',
     'bower_components/angular-ui-router/release/angular-ui-router.js',
@@ -43,7 +44,9 @@ var paths = {
     '!bower_components/foundation-apps/js/angular/app.js',
     'bower_components/peerjs/peer.min.js',
     'bower_components/angular-local-storage/dist/angular-local-storage.min.js',
-    'bower_components/angular-qrcode/angular-qrcode.js'
+    'bower_components/angular-qrcode/angular-qrcode.js',
+    'bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.js',
+    'bower_components/angular-nanoscroller/scrollable.js'
   ],
   // These files are for your app's JavaScript
   appJS: [

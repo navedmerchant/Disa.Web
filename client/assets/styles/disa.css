@@ -348,3 +348,25 @@
   color: #6f6f6f;
   margin-top: -7px;
 }
+
+.sidebar-scrollable {
+  position: relative !important;
+  margin-right: 0px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.chat-container {
+  height: 100vh;
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

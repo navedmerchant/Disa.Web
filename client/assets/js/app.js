@@ -10,7 +10,8 @@
       'foundation.dynamicRouting',
       'foundation.dynamicRouting.animations',
       'LocalStorageModule',
-      'monospaced.qrcode'
+      'monospaced.qrcode',
+      'sun.scrollable'
     ])
       .config(config)
       .run(run)
