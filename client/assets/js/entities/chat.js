@@ -3,6 +3,11 @@
  */
 var Disa = Disa || {};
 
+/**
+ * Chat class representing the chats for the app
+ * @param type the type of the Chat. can be "solo" or "party"
+ * @constructor
+ */
 Disa.Chat = function (type) {
 
   /**

@@ -2,7 +2,10 @@
  * Created by naved on 21/1/16.
  */
 var Disa = Disa || {};
-
+/**
+ * Constructor for the Contact class
+ * @constructor
+ */
 Disa.Contact = function () {
 
   /**
