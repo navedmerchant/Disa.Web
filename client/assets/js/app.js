@@ -9,9 +9,9 @@
       'foundation',
       'foundation.dynamicRouting',
       'foundation.dynamicRouting.animations',
-      'LocalStorageModule',
-      'monospaced.qrcode',
-      'sun.scrollable'
+      'LocalStorageModule', //for caching of local data
+      'monospaced.qrcode', //QR code generation
+      'sun.scrollable' //nanoscroller
     ])
       .config(config)
       .run(run)

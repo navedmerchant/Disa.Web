@@ -31,20 +31,9 @@ main.controller('LoginController',
       }
 
 
-      //generateQRCode(id);
-
-      /**
-       * called internally for setting the peerId
-       * @param {string}id: The Id of the current peer
-       */
-      function generateQRCode(id) {
-        $scope.$apply(function (id) {
-          $scope.thisId = id;
-        });
-      }
-
       communications.subscribeConnectionOpen($scope, function () {
         $rootScope.connectionOpened = true;
+        $state.go('chat');
       });
 
 
@@ -57,5 +46,21 @@ main.controller('LoginController',
         function (event, toState, toParams, fromState, fromParams, error) {
           console.log('state change error');
         });
+
+    }]);
+
+
+main.controller('ChatController',
+  ['$rootScope',
+    '$scope',
+    'localStorageService',
+    'communications',
+    '$state',
+    function ($rootScope,
+              $scope,
+              localStorageService,
+              communications,
+              $state) {
+
 
     }]);

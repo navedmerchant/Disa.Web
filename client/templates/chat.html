@@ -2,24 +2,29 @@
 name: chat
 url: /chat
 animationIn: zoomIn
+controller: ChatController
 ---
 <div class="grid-frame">
   <div zf-panel position="left" id="sidebar" class="medium-grid-block collapse medium-3 large-3 vertical">
     <div class="grid-content collapse shrink hide-for-medium">
-      <a href="" class="secondary button expand" zf-close>Close</a>
+      <a href="" class="close-button" zf-close>×</a>
     </div>
     <div class="grid-content collapse shrink">
       <ul class="menu-bar primary">
-        <li class="medium-10"><img class="logo" src="../assets/img/logo-white-new.png"></li>
-        <li class="medium-2"><a href="#"><img class="settings" zf-iconic="" icon="cog" size="small"
+        <li class="medium-10 small-8"><img class="logo" src="../assets/img/logo-white-new.png"></li>
+        <li class="medium-2 small-2"><a href="#"><img class="settings" zf-iconic="" icon="cog" size="small"
                                               class="iconic-color-primary"> </a></li>
+        <li class="small-2 hide-for-medium"></li>
+        <div class="hide-for-medium">
+          <a href="" class="close-button" zf-close>×</a>
+        </div>
       </ul>
     </div>
     <div class="grid-content sidebar-scrollable overflow-hidden">
-      <section class="block-list" scrollable>
+      <section class="block-list" scrollable="">
         <ul>
           <li>
-            <a href="#">
+            <a>
               <div class="chat-selector">
                 <h5 class="chat-header">Jake</h5>
                 <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">

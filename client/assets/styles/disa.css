@@ -258,6 +258,7 @@
   width: auto !important;
   height: auto !important;
   max-width: 136px !important;
+  max-height: 48px;
 }
 
 .settings{
@@ -352,6 +353,7 @@
 .sidebar-scrollable {
   position: relative !important;
   margin-right: 0px;
+  height: 91vh;
 }
 
 .no-margin-bottom {

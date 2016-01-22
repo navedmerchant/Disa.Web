@@ -46,14 +46,19 @@ var paths = {
     'bower_components/angular-local-storage/dist/angular-local-storage.min.js',
     'bower_components/angular-qrcode/angular-qrcode.js',
     'bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.js',
-    'bower_components/angular-nanoscroller/scrollable.js'
+    'bower_components/angular-nanoscroller/scrollable.js',
+    'client/assets/js/third-party/qrcode.js'
   ],
   // These files are for your app's JavaScript
   appJS: [
     'client/assets/js/app.js',
     'client/assets/js/controllers.js',
     'client/assets/js/services.js',
-    'client/assets/js/third-party/qrcode.js'
+    'client/assets/js/entities/bubble.js',
+    'client/assets/js/entities/chat.js',
+    'client/assets/js/entities/contact.js',
+    'client/assets/js/entities/group.js',
+    'client/assets/js/entities/service.js'
   ]
 }
 
