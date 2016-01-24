@@ -11,18 +11,9 @@ var Disa = Disa || {};
 Disa.Chat = function (type) {
 
   /**
-   * Chat type, solo or group
-   * @type {{Solo: string, Party: string}}
-   */
-  this.Type = {
-    Solo:"solo",
-    Party:"party"
-  };
-
-  /**
    * depending on the type, the contact will be a group or a contact
    */
-  if(type == this.Type.Solo) {
+  if(type === Disa.Chat.Type.Solo) {
     this.contact = new Disa.Contact();
   }else{
     this.contact = new Disa.Group();
@@ -33,6 +24,31 @@ Disa.Chat = function (type) {
    * @type {Array} of {Disa.Bubble}
    */
   this.bubbles = [];
+
+  this.getChatPreview = function () {
+    var chatPreview = this.bubbles[this.bubbles.length-1];
+    if(chatPreview){
+      //TODO:handle all types here
+      var preview = chatPreview.content;
+
+      if(chatPreview.Type = Disa.Bubble.BubbleType.Text){
+
+        if(chatPreview.messageType == Disa.Bubble.MessageType.sent){
+          preview = "You: " + chatPreview.content;
+        }
+
+        if(preview.length <= 35){
+          return preview;
+        }
+        else{
+          return preview.substr(0,32) + '...';
+        }
+      }
+    }
+    else{
+      return "";
+    }
+  };
 
   /**
    * the services the chat belongs to
@@ -46,4 +62,14 @@ Disa.Chat = function (type) {
    */
   this.primaryService = Disa.ServiceType.Text;
 
+};
+
+
+/**
+ * Chat type, solo or group
+ * @type {{Solo: string, Party: string}}
+ */
+Disa.Chat.Type = {
+  Solo:"solo",
+  Party:"party"
 };

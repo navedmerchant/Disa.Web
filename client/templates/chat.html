@@ -13,7 +13,7 @@ controller: ChatController
       <ul class="menu-bar primary">
         <li class="medium-10 small-8"><img class="logo" src="../assets/img/logo-white-new.png"></li>
         <li class="medium-2 small-2"><a href="#"><img class="settings" zf-iconic="" icon="cog" size="small"
-                                              class="iconic-color-primary"> </a></li>
+                                                      class="iconic-color-primary"> </a></li>
         <li class="small-2 hide-for-medium"></li>
         <div class="hide-for-medium">
           <a href="" class="close-button" zf-close>×</a>
@@ -23,176 +23,44 @@ controller: ChatController
     <div class="grid-content sidebar-scrollable overflow-hidden">
       <section class="block-list" scrollable="">
         <ul>
-          <li>
-            <a>
+          <li ng-repeat="chat in chats">
+            <a ng-click="showChat($index)">
               <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
+                <h5 class="chat-header">{{chat.contact}}</h5>
                 <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Jake</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: true dat man</small>
-                <small class="chat-time">21:09</small>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="chat-selector">
-                <h5 class="chat-header">Broda</h5>
-                <img class="chat-icon" zf-iconic="" icon="person" size="medium" class="iconic-color-primary">
-                <small class="chat-preview">You: Cool</small>
-                <small class="chat-time">21:09</small>
+                <small class="chat-preview">{{chat.getChatPreview()}}</small>
+                <small class="chat-time">{{chat.bubbles[chat.bubbles.length-1].timestamp}}</small>
               </div>
             </a>
           </li>
         </ul>
       </section>
-
     </div>
 
   </div>
 
   <div class="grid-block collapse medium-9 large-9 vertical">
-    <div id="header" class="shrink collapse grid-content">
+    <div ng-show="chatHeader" id="header" class="shrink collapse grid-content">
       <ul class="menu-bar primary">
-        <li class="hide-for-medium small"><a zf-open="sidebar" href="#"><img zf-iconic="" icon="comment-square"
-                                                                             size="small"
-                                                                             class="settings iconic-color-primary"></a>
+        <li class="hide-for-medium small"><a zf-open="sidebar" href="#">
+          <img zf-iconic="" icon="comment-square"
+               size="small"
+               class="settings iconic-color-primary"></a>
         </li>
         <li class="medium-10" zf-open="info">
           <a class="conversation-header" href="#">
-            Jake
+            {{chatHeader}}
             <!--<span class="status">last seen 45 minutes ago</span>-->
           </a>
         </li>
         <li class="small-1" zf-open="info">
           <a href="#">
             <img zf-iconic="" icon="document" size="small" class="settings iconic-color-primary">
-            <!--<span class="status">last seen 45 minutes ago</span>-->
           </a>
         </li>
-        <li class="small-1" zf-open="info">
+        <li  class="small-1" zf-open="info">
           <a href="#">
             <img zf-iconic="" icon="cog" size="small" class="settings iconic-color-primary">
-            <!--<span class="status">last seen 45 minutes ago</span>-->
           </a>
         </li>
       </ul>
@@ -202,85 +70,29 @@ controller: ChatController
       <div class="grid-block small-12 medium-12 vertical">
         <div class="grid-block vertical">
           <div class="grid-block vertical relative gray-background chat-container" scrollable="">
-            <div class="received-message">
-              <img zf-iconic="" icon="person" size="medium" class="iconic-color-primary sender-icon">
+            <div ng-repeat="bubble in bubbles">
+              <div ng-if="bubble.messageType == 'received'" class="received-message">
+                <img zf-iconic="" icon="person" size="medium" class="grid-block iconic-color-primary sender-icon">
 
-              <div class="talk-bubble tri-right left-top received-message-margin-reduced">
-                <div class="talktext">
-                  <p>Disa web looks awesome XP! Disa web looks awesome XP! Disa web looks awesome XP! Disa web looks
-                    awesome XP!</p>
+                <div class="talk-bubble tri-right left-top received-message-margin-reduced">
+                  <div class="talktext">
+                    <p>{{bubble.content}}</p>
+                  </div>
                 </div>
+                <small class="received-message-status">1m via Text</small>
               </div>
-              <small class="received-message-status">1m via Text</small>
-            </div>
-            <div class="sent-message">
-              <div class="talk-bubble tri-right right-top inline-block status-padding-added">
-                <div class="talktext status-padding-removed">
-                  <p>true dat man</p>
-                  <small class="text-status">Delivered</small>
+              <div ng-if="bubble.messageType == 'sent'" class="sent-message">
+                <div class="talk-bubble tri-right right-top inline-block status-padding-added">
+                  <div class="talktext status-padding-removed">
+                    <p>{{bubble.content}}</p>
+                    <small class="text-status">Delivered</small>
+                  </div>
                 </div>
+                <p class="sent-message-status">1m via Text</p>
               </div>
-              <p class="sent-message-status">1m via Text</p>
-            </div>
-            <div class="received-message">
-              <img zf-iconic="" icon="person" size="medium" class="grid-block iconic-color-primary sender-icon">
-
-              <div class="talk-bubble tri-right left-top received-message-margin-reduced">
-                <div class="talktext">
-                  <p>Disa web looks awesome XP!</p>
-                </div>
-              </div>
-              <small class="received-message-status">1m via Text</small>
-            </div>
-            <div class="sent-message">
-              <div class="talk-bubble tri-right right-top inline-block status-padding-added">
-                <div class="talktext status-padding-removed">
-                  <p>true dat man</p>
-                  <small class="text-status">Delivered</small>
-                </div>
-              </div>
-              <p class="sent-message-status">1m via Text</p>
-            </div>
-            <div class="received-message">
-              <img zf-iconic="" icon="person" size="medium" class="grid-block iconic-color-primary sender-icon">
-
-              <div class="talk-bubble tri-right left-top received-message-margin-reduced">
-                <div class="talktext">
-                  <p>Disa web looks awesome XP!</p>
-                </div>
-              </div>
-              <small class="received-message-status">1m via Text</small>
-            </div>
-            <div class="sent-message">
-              <div class="talk-bubble tri-right right-top inline-block status-padding-added">
-                <div class="talktext status-padding-removed">
-                  <p>true dat man true dat man true dat man true dat man true dat man true dat man true dat man</p>
-                  <small class="text-status">Delivered</small>
-                </div>
-              </div>
-              <p class="sent-message-status">1m via Text</p>
-            </div>
-            <div class="received-message">
-              <img zf-iconic="" icon="person" size="medium" class="grid-block iconic-color-primary sender-icon">
-
-              <div class="talk-bubble tri-right left-top received-message-margin-reduced">
-                <div class="talktext">
-                  <p>Disa web looks awesome XP!</p>
-                </div>
-              </div>
-              <small class="received-message-status">1m via Text</small>
-            </div>
-            <div class="sent-message">
-              <div class="talk-bubble tri-right right-top inline-block status-padding-added">
-                <div class="talktext status-padding-removed">
-                  <p>true dat man</p>
-                  <small class="text-status">Delivered</small>
-                </div>
-              </div>
-              <p class="sent-message-status">1m via Text</p>
             </div>
           </div>
-          <div class="grid-block vertical overflow-hidden">
+          <div class="grid-block vertical overflow-hidden" ng-show="chatHeader">
             <form id="input_form">
              <span class="inline-label no-margin-bottom">
                 <a class="secondary button" href="#">:)</a>

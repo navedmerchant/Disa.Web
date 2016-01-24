@@ -8,18 +8,6 @@ var Disa = Disa || {};
  */
 Disa.Bubble = function(){
 
-  /**
-   * An Enum representing the type of bubble
-   * @type {{Text: string, Image: string, Audio: string, Video: string}}
-   */
-  this.BubbleType = {
-    Text:"text",
-    Image:"image",
-    Audio:"audio",
-    Video:"video"
-
-  };
-
 
   /**
    * True if the bubble is of an abstract type.
@@ -27,12 +15,17 @@ Disa.Bubble = function(){
    */
   this.abstract = false;
 
+  /**
+   * indicates if the message is a sent or a received message
+   * @type {string}
+   */
+  this.messageType = Disa.Bubble.MessageType.sent;
 
   /**
    * Field representing the content that this bubble has.
    * @type {string}
    */
-  this.type = this.BubbleType.Text;
+  this.type = Disa.Bubble.BubbleType.Text;
 
   /**
    * the content of this bubble. will be the text or the encoded stuff.
@@ -52,4 +45,21 @@ Disa.Bubble = function(){
    */
   this.service = Disa.ServiceType.Text;
 
+};
+
+/**
+ * An Enum representing the type of bubble
+ * @type {{Text: string, Image: string, Audio: string, Video: string}}
+ */
+Disa.Bubble.BubbleType = {
+  Text:"text",
+  Image:"image",
+  Audio:"audio",
+  Video:"video"
+
+};
+
+Disa.Bubble.MessageType = {
+  sent:"sent",
+  received:"received"
 };
